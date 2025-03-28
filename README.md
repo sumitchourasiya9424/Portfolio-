@@ -1,2 +1,2 @@
 # Portfolio-
-Portfolio in public 
+Portfolio of my profile 
