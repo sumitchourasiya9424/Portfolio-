@@ -1,25 +1,84 @@
-body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+/* ----- Global Styles ----- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
 
-header { background: linear-gradient(90deg, #007bff, #6610f2); color: white; text-align: center; padding: 30px; font-size: 24px; font-weight: bold; }
+/* ----- Header Section ----- */
+header {
+    background: linear-gradient(90deg, #007bff, #6610f2);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
 
-section { margin: 20px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); max-width: 800px; }
+/* ----- Section Styling ----- */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
 
-h1, h2 { color: #007bff; text-align: center; }
+h1, h2 {
+    color: #007bff;
+    text-align: center;
+}
 
-ul { list-style: none; padding: 0; }
-
-ul li { background: #e3e6f3; margin: 8px 0; padding: 12px; border-radius: 6px; font-size: 16px; transition: 0.3s; }
-
-ul li:hover { background: #cfd8ff; }
-
-footer { text-align: center; padding: 15px; background: linear-gradient(90deg, #6610f2, #007bff); color: white; position: relative; bottom: 0; width: 100%; font-size: 14px; font-weight: bold; }
-.Profile Picture {
+/* ----- Profile Image Styling ----- */
+.profile-pic {
     width: 150px; 
     height: 150px;
-    border-radius: 50%; /* इमेज को गोल बना देगा */
-    object-fit: cover; /* सही तरीके से फिट करने के लिए */
+    border-radius: 50%; /* इमेज को गोल बनाएगा */
+    object-fit: cover; /* सही से फिट करेगा */
     border: 4px solid gold; /* गोल्डन बॉर्डर */
-    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8); /* हल्की गोल्डन ग्लोइंग शैडो */
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8); /* हल्का गोल्डन ग्लो */
     display: block;
-    margin: 20px auto; /* सेंटर में लाने के लिए */
+    margin: 20px auto; /* इमेज को सेंटर में लाने के लिए */
+}
+
+/* ----- List Styling ----- */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e3e6f3;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background: #cfd8ff;
+}
+
+/* ----- Contact Section Styling ----- */
+#contact p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ----- Footer Styling ----- */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(90deg, #6610f2, #007bff);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
 }
