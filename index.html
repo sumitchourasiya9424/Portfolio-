@@ -1,46 +1,218 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Dashboard - Sumit Chourasiya</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>Sumit Chourasiya</h1>
-        <p>Post Graduate, LNCT University Bhopal | CGPA: 8.3</p>
-    </header>
-    <section id="profile">
-        <h2>Profile</h2>
-        <<img class="profile-pic" src="IMG_20250314_132622.jpg" alt="Profile Picture">
-        <p><strong>Job Profile:</strong> Data Analyst</p>
-        <p><strong>Skills:</strong> Python, SQL, C/C++</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
+    <nav class="navbar">
         <ul>
-            <li><strong>Project 1:</strong> Data Cleaning and Data Filtering</li>
-            <li><strong>Project 2:</strong> Weather Forecast</li>
-            <li><strong>Project 3:</strong> Deep Fake Detection and Mitigation System</li>
+    
+            <li><img src="image/LS20250331162012.png" alt="Profile Icon" class="nav-icon"></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+    
         </ul>
+    </nav>
+    
+    <section id="home" class="home">
+        <div class="overlay"></div> <!-- Background Overlay -->
+        <div class="home-container">
+            <div class="home-content">
+                <h1 class="typing-text">Welcome to My Portfolio</h1>
+                <p class="motivation">"Success is not final, failure is not fatal: it is the courage to continue that counts."</p> 
+
+                <p class="motivation">"Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle."</p>
+        
+                <a href="#projects" class="explore-btn">Explore My Work</a>
+            </div>
+            <div class="image-container">
+                <img src="image/LS20250331122630.png" alt="My Profile Image">
+            </div>
+        </div>
     </section>
+
+    <section id="dashboard" class="dashboard-container">
+        <h2>Dashboard</h2>
+        <div class="dashboard-items">
+            <div class="dashboard-box">
+                <i class="fas fa-chart-line"></i>
+                <h3>Analytics</h3\>
+                <p>Yet to be updated</p>
+            </div>
+            <div class="dashboard-box">
+                <i class="fas fa-tasks"></i>
+                <h3>Tasks</h3>
+                <p>Yet to be updated</p>
+            </div>
+            <div class="dashboard-box">
+                <i class="fas fa-chart-bar"></i>
+                <h4>Performance</h4>
+                <p>Yet to be updated</p>
+            </div>
+            <div class="dashboard-box">
+                <i class="fas fa-file-alt"></i>
+                <h3>Reports</h3>
+                <p>Yet to be updated</p>
+            </div>
+            <div class="dashboard-box">
+                <i class="fas fa-user"></i>
+                <h3>Profile</h3>
+                <p>Yet to be updated</p>
+            </div>
+            <div class="dashboard-box">
+                <i class="fas fa-cogs"></i>
+                <h3>Settings</h3>
+                <p>Yet to be updated</p>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <img src="image/1677091754319.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Sumit Chourasiya</h1>
+        <p>Passionate about technology and problem-solving. Skilled in software development and data analysis & WEB development.</p>
+        
+        <!-- Academic Details -->
+        <div class="academic-details">
+            <h2>Education</h2>
+            <p><strong>Degree:</strong> Master of Computer Application (MCA)</p>
+            <p><strong>University:</strong> [Lnct Universiy Bhopal]</p>
+            <p><strong>Batch:</strong> 2022 - 2024</p>
+            <p><strong>CGPA:</strong> [8.03]</p>
+        </div>
+    </header>
+
+    <section id="profile">
+        <div class="info-box">
+            <h3>Other Qualifications</h3>
+            <button class="toggle-btn" onclick="toggleDetails('grad-details')">Graduation (Tap to View)</button>
+            <div id="grad-details" class="details">
+                <p><strong>Bachelor of Science</strong> - Motilal Vigyan Bhopal (Barkatullah University) (65.35%)</p>
+            </div>
+            <button class="toggle-btn" onclick="toggleDetails('inter-details')">12th (Tap to View)</button>
+            <div id="inter-details" class="details">
+                <p><strong>12th</strong> - Ritik Convent School, Bhopal (66.2%)</p>
+            </div>
+            <button class="toggle-btn" onclick="toggleDetails('highschool-details')">10th (Tap to View)</button>
+            <div id="highschool-details" class="details">
+                <p><strong>10th</strong> - Ritik Convent School, Bhopal (71.8%)</p>
+            </div>
+        </div>
+
+        <div class="info-box section-container">
+            <h3>Job Profile</h3>
+            <p>Data Analyst</p>
+            <p>AI ML Engineer</p>
+            <p>Full Stack Developer</p>
+        </div>
+
+        <div class="info-box section-container">
+            <h3>Work Experience</h3>
+            <p>Fresher</p>
+        </div>
+
+        <div class="info-box section-container">
+            <h3>Skills</h3>
+            <p>Python, HTML & CSS, ChatGPT</p>
+            <p>Machine Learning, Data Visualization</p>
+            <p>MS Office, Multitasking</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Resume</h3>
+            <a href="image/Resume.pdf" target="_blank" class="resume-button">View & Download Resume</a>
+        </div>
+    </section>
+    
+    
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>AI Image Deepfake Detection Model</h3>
+                <p>A machine learning project that detects deepfake images.</p>
+                <a href="image/DeepFake Detection and Mitigation System (1).pdf" target="_blank" class="open-project-btn">Open Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website (This One)</h3>
+                <p>A responsive portfolio showcasing my work and skills.</p>
+                <a href="https://sumitchourasiya9424.github.io/Portfolio-/" target="_blank" class="open-project-btn">Open Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Data Filtering & Data Visualization</h3>
+                <p>A Python-based tool to analyze stock trends and predictions.</p>
+                <a href="yet to be uploaded" target="_blank" class="open-project-btn">Open Project</a>
+            </div>
+        </div>
+    </section>
+    
     <section id="certifications">
         <h2>Certifications</h2>
-        <ul>
-            <li>Cisco Cyber Security</li>
-            <li>Python</li>
-            <li>AI & ML</li>
-            <li>Communication</li>
-        </ul>
+        <div class="certifications-container">
+            <div class="cert-card">
+                <h3>AI Data Science & Data Analytics Certification</h3>
+                <p>Issued by samatrix</p>
+                <a href="https://drive.google.com/file/d/1SybM__bdNZ45yzZd3uqaPhZxeOLzyOfQ/view?usp=drive_link" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+            <div class="cert-card">
+                <h3>Python Certificate</h3>
+                <p>Issued by samatrix & cisco</p>
+                <a href="https://drive.google.com/file/d/1T2bOwzC4J-7VZCYulZwm2DggWGMZDPfk/view?usp=drive_link" target="_blank" class="cert-btn">View Certificate</a>
+                <a href="https://drive.google.com/file/d/1T7OSQqvb6QPXdDAh3dXqS7a4S8G1FbNX/view?usp=drive_link" target="_blank" class="cert-btn">View Certificate</a>
+
+            </div>
+            <div class="cert-card">
+                <h3>cyber security & communication</h3>
+                <p>Issued by cisco & tcs</p>
+                <a href="https://drive.google.com/file/d/1cRrotn0ty1p0f0BUFZTmf5e26zUMqS8z/view?usp=drive_link" target="_blank" class="cert-btn">View Certificate</a>
+                <a href="https://drive.google.com/file/d/1YOem9HlyYQrz9fAC3DvGXjzZ0sTeZoAj/view?usp=drive_link" target="_blank" class="cert-btn">View Certificate</a>
+ 
+            </div>
+        </div>
     </section>
+    
+    
     <section id="contact">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> sumitchourasiya53@gmail.com</p>
-        <p><strong>Phone:</strong> [Your Contact Number]</p>
-        <p><strong>LinkedIn:</strong> linkedin.com/in/sumitchourasiya</p>
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:sumitchourasiya53@gmail.com">sumitchourasiya53@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+919399548208">+91 9399548208</a></p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://linkedin.com/in/sumit-chouarsiya-b26755257" target="_blank" class="social-btn linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.instagram.com/sumitofficiaal?igsh=eGp1djc2NnU1ZnZ2" target="_blank" class="social-btn instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://youtube.com/@sumitchouarsiya?si=X6vZpcIYjOsluXTC" target="_blank" class="social-btn youtube">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="https://github.com/sumitchourasiya9424" target="_blank" class="social-btn github">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <p class="thank-you-text">Thanks for showing interest in my portfolio!</p>
+
+            </div>
+        </div>
     </section>
+    
+    
     <footer>
         <p>&copy; 2025 Sumit Chourasiya</p>
+        <p>"Strive not to be a success, but rather to be of value." - Albert Einstein</p>
     </footer>
 </body>
 </html>
